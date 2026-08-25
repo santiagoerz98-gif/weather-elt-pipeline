@@ -1,0 +1,44 @@
+# Entorno virtual
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Variables y secretos
+.env
+.env.*
+!.env.example
+*.json
+!package.json
+
+# Credenciales de Google Cloud
+*-credentials.json
+service-account*.json
+*.key
+
+# dbt
+dbt_project/target/
+dbt_project/logs/
+dbt_project/dbt_packages/
+dbt_project/.user.yml
+
+# Prefect
+.prefect/
+prefect.db
+.flow/
+.cache/
+
+# Tests y cobertura
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Sistema y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
