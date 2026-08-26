@@ -69,7 +69,7 @@ class WeatherAPIClient:
 
         self.session.mount('http://', self.adapter)
 
-    def get(
+    def get_weather_data(
             self, 
             params:dict | None = None
         )-> dict:
@@ -169,7 +169,7 @@ class WeatherAPIClient:
             "forecast_days": 0,  # No forecast days requested for historical data
         }
 
-        return self.get(params=params)
+        return self.get_weather_data(params=params)
 
     def get_forecast_weather(
             self, 
@@ -201,4 +201,4 @@ class WeatherAPIClient:
             "past_days": 0,  # No past days requested for forecast data
         }
 
-        return self.get(params=params)
+        return self.get_weather_data(params=params)
