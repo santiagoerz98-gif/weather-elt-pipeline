@@ -56,6 +56,7 @@ WEATHER_PARAMETERS = [
     "wind_speed_10m",  # Wind speed at 10 meters above ground level
     "apparent_temperature",  # Apparent temperature
     "is_day",  # Day indicator (0 for night, 1 for day)
+    "weather_code",  # Weather code indicating specific weather conditions
 ]
 
 HISTORICAL_QUERY_PARAMS = {
